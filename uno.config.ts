@@ -1,30 +1,25 @@
-import {
-  defineConfig,
-  presetIcons,
-  presetWebFonts,
-  presetUno,
-} from "unocss";
+import { defineConfig, presetIcons, presetWebFonts, presetUno } from 'unocss'
 
 export default defineConfig({
   theme: {
     colors: {
-      mainBackgroundColor: "#0d1117",
-      columnBackgroundColor: "#161b22",
-      customWhite: "#fafafa",
-    },
+      mainBackgroundColor: '#0d1117',
+      columnBackgroundColor: '#161c22',
+      customWhite: '#fafafa'
+    }
   },
   presets: [
     presetUno(),
     presetWebFonts({
-      provider: "google",
-      fonts: {},
+      provider: 'google',
+      fonts: {}
     }),
     presetIcons({
-      cdn: "https://esm.sh/",
+      cdn: 'https://esm.sh/',
       extraProperties: {
-        display: "inline-block",
-        "vertical-align": "middle",
-      },
-    }),
-  ],
-});
+        display: 'inline-block',
+        'vertical-align': 'middle'
+      }
+    })
+  ]
+})
